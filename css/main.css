@@ -1,0 +1,919 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+                    common rules
+========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+header, .maincontainer, .chausettesize ul, .imgarticle, .chausette span, .footer {
+    display: flex;
+}
+
+.navchausette, .mainnav, .panier, .navblog,.tablet,.desktop {
+    display: none;
+}
+
+.logo, header, footer {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+                   end of common rules
+========================================================================== */
+
+
+/* ==========================================================================
+                header rules
+========================================================================== */
+
+.logo figure {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.logo img {
+    width: 175px;
+    height: 50.5px;
+}
+
+header {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------- blog.html ---------------------------*/
+
+.logoi {
+    color: white;
+}
+
+
+/*---------------------------blog.html -------------------------------------*/
+
+
+/* ==========================================================================
+                   end of header rules
+========================================================================== */
+
+
+/* ==========================================================================
+                main rules
+========================================================================== */
+
+
+/* -------------------------------------------
+
+                            start aside rules
+                            -------------------------------*/
+
+.maincontainer {
+    margin-top: 80px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+h1 {
+    width: 90%;
+    margin: auto;
+    font-family: inherit;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.chausettesize {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.chausettesize ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.chausettesize ul li {
+    width: 62px;
+    height: 26px;
+    background-color: rgba(240, 240, 240);
+    margin-left: 7px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+    padding: 2px;
+    text-align: center;
+}
+
+.chausettesize li:first-child {
+    background-color: #4A4A4C;
+}
+
+.chausettesize li:first-child a {
+    color: white;
+}
+
+.chausettesize ul li a {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: #A3A3A3;
+}
+
+
+/* -------------------------------------------
+
+                            End of aside rules
+                            -------------------------------*/
+
+
+/* -------------------------------------------
+
+                            Start section rules
+                            -------------------------------*/
+
+.imgarticle {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.chausette {
+    width: 45%;
+    padding-bottom: 20px;
+}
+
+.chausetteimg {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.chausette span {
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.chausette figure, .chausetteimg figure {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.chausette img, .chausetteimg img {
+    width: 100%;
+    height: auto;
+}
+
+.chausette h2 {
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sizeli {
+    display: none;
+}
+
+
+/* -------------------------------------------
+
+                            end of section rules
+                            -------------------------------*/
+
+
+/* -------------------------- blog.html ---------------------------*/
+
+.maincontainerblog {
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.mainblog {
+    width: 100%;
+}
+
+.articleblog h2 {
+    font-weight: lighter;
+    color: #454545;
+}
+
+.commentaire {
+    font-size: 12px;
+    color: #BABBB7;
+    margin-bottom: 20px;
+}
+
+.commentaire a {
+    text-decoration: underline;
+    color: #BABBB7;
+    margin-bottom: 50px;
+}
+
+.articleblog p {
+    font-size: 11px;
+}
+
+.articleblog figure {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 7px 0;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.articleblog img {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+
+.articleblog {
+    margin-bottom: 20px;
+}
+
+.espace {
+    margin-bottom: 20px;
+}
+
+
+/* -------------------------- blog.html ---------------------------*/
+
+
+/* ==========================================================================
+                   end of main rules
+========================================================================== */
+
+
+/* ==========================================================================
+                            end of footer rules
+========================================================================== */
+
+.footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.imgfooter {
+    width: 45%;
+    background-color: rgba(240, 240, 240);
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.imgfooter a {
+    width: 100%;
+}
+
+.imgfooter figure {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    align-items: center;
+}
+
+.imgfooter img {
+    width: 57px;
+    height: 55px;
+}
+
+.imgfooter figcaption {
+    margin-left: 15px;
+}
+
+.imgfooter h4 {
+    font-size: 10px;
+    color: #555;
+}
+
+.footer nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.footer nav li a {
+    display: flex;
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 7px;
+}
+
+.footer label {
+    margin-right: 20px;
+}
+
+
+/* ==========================================================================
+                                     end of footer rules
+========================================================================== */
+
+@media (min-width:768px) {
+    /* ==========================================================================
+                      common rules
+  ========================================================================== */
+  .mobile{
+    display: none;
+  }
+
+  .tablet{
+    display: block;
+  }
+    /* ==========================================================================
+                     end of common rules
+  ========================================================================== */
+
+    /* ==========================================================================
+                  main rules
+  ========================================================================== */
+    /* -------------------------------------------
+
+                              Start section rules
+                              -------------------------------*/
+    .chausette {
+        width: 32%;
+    }
+    .chausetteimg {
+        width: 60%;
+    }
+    .chausette h2 {
+        padding-bottom: 17px;
+    }
+    .sizeli {
+        display: block;
+    }
+    .sizeli ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    .sizeli ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 5px;
+        background-color: orange;
+        padding: 2px;
+    }
+    .sizeli ul li span:last-child {
+        border-top: 1px solid white;
+    }
+    /* -------------------------------------------
+
+                              end of section rules
+                              -------------------------------*/
+    /* ---------------------------- blog.html -----------------------*/
+    .articleblog p {
+        font-size: 14px;
+    }
+    .maincontainerblog {
+        width: 83%;
+    }
+    /*-------------------------------- blog.html -------------------*/
+    /* ==========================================================================
+                     end of main rules
+  ========================================================================== */
+    /* ==========================================================================
+                              start of footer rules
+  ========================================================================== */
+    .footer nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer nav ul li {
+        width: 30%;
+    }
+    /* ---------------------------- blog.html -----------------------*/
+    .navfooterblog{
+      width: 100%;
+    }
+    /* ---------------------------- blog.html -----------------------*/
+    /* ==========================================================================
+                                       end of footer rules
+  ========================================================================== */
+}
+
+@media (min-width:1024px) {
+    /* ==========================================================================
+                      common rules
+  ========================================================================== */
+    header, .maincontainer, .footer {
+        width: 65%;
+        margin: auto;
+    }
+    .logo i {
+        display: none;
+    }
+    .navchausette {
+        width: 100%;
+    }
+    footer {
+        background-color: lightgrey;
+        padding-top: 35px;
+    }
+    .tablet{
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+    /* ==========================================================================
+                     end of common rules
+  ========================================================================== */
+    /* ==========================================================================
+                  header rules
+  ========================================================================== */
+    .backgroundheader {
+        width: 100%;
+        background-color: lightgrey;
+    }
+    header {
+        position: inherit;
+        box-shadow: inherit;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    h1 {
+        width: 100%;
+    }
+    .navchausette, .mainnav, .panier {
+        display: block;
+    }
+    .logo {
+        width: 30%;
+    }
+    /* ---------------------------------------------
+
+    panier
+
+    -----------------------------------------*/
+    /*------- blog.html ----------*/
+    .retourpanier {
+        padding: 30px;
+    }
+    /* ------- blog.html --------*/
+    .panier {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: lightpink;
+    }
+    .panier select {
+        width: 40px;
+        height: 15px;
+        font-size: 10px;
+        border-radius: 0px;
+    }
+    .panier select option {
+        font-size: 10px;
+    }
+    .panier>p, .panier>a {
+        font-size: 10px;
+    }
+    .panier a {
+        text-decoration: underline;
+    }
+    .productpanier {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .productpanier p:first-child {
+        font-size: 50px;
+    }
+    .productpanier p {
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    /* ---------------------------------------------
+
+    panier
+
+    -----------------------------------------*/
+    .mainnav {
+        width: 20%;
+    }
+    .mainnav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .mainnav ul li {
+        padding: 5px;
+    }
+    .mainnav ul li:hover {
+        background-color: white;
+        border-radius: 4px;
+    }
+    .mainnav ul li a:hover {
+        text-decoration: none;
+        font-weight: inherit;
+    }
+    .logo figure, .logo img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .mainnav ul, .navchausette ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+    .navchausette ul {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .navchausette img, .navchausette figure {
+        width: 56px;
+        height: 56px;
+    }
+    .navchausette figure {
+        margin: 0;
+    }
+    .navchausette ul li {
+        width: 16%;
+    }
+    .navchausette ul li a {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 0 7px;
+    }
+    .navchausette p {
+        font-size: 10px;
+        color: #555;
+        width: 90%;
+    }
+    .navchausette span {
+        font-size: 16px;
+    }
+    .navchausette ul li:first-child {
+        background-color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    /* ==========================================================================
+                     end of header rules
+  ========================================================================== */
+    /* ==========================================================================
+                  main rules
+  ========================================================================== */
+    .chausettesize ul {
+        position: fixed;
+        flex-direction: column;
+        right: 35px;
+        top: 300px;
+    }
+    .chausette {
+        width: 22%;
+    }
+    .chausetteimg {
+        width: 44%;
+    }
+    /* ---------------------------------------- blog.html
+    --------------------------------------------------------------------- */
+    .maincontainerblog {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainblog {
+        width: 70%;
+    }
+    .navblog {
+        display: block;
+        width: 25%;
+    }
+    .navblog ul {
+        list-style-type: none;
+    }
+    .navblog a {
+        color: lightblue;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .navblog article i {
+        color: #454545;
+    }
+    .navblog p:first-child {
+        color: #454545;
+    }
+    .navblog a:hover {
+        color: black;
+        text-decoration: none;
+        font-weight: inherit;
+    }
+    .navblog article {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .navblog figure {
+        margin: 0 40px;
+    }
+    /* ---------------------------------------- blog.html
+    --------------------------------------------------------------------- */
+    /* ==========================================================================
+                     end of main rules
+  ========================================================================== */
+    /* ==========================================================================
+                              end of footer rules
+  ========================================================================== */
+    .imgfooter {
+        width: 22%;
+        margin-right: 50px;
+        margin-bottom: 25px;
+    }
+    /* ==========================================================================
+                                       end of footer rules
+  ========================================================================== */
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *, *:before, *:after, *:first-letter, *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
